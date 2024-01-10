@@ -1,0 +1,356 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url(Images/Banner/image-from-rawpixel-id-2768303-original.png);
+    background-position: center;
+}
+
+.background{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(Images/Banner/Background-Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.navbar li { 
+    list-style: none;
+}
+
+.navbar .header-links{
+    margin-top: 2%;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a:hover {
+    color: rgb(255, 3, 3);
+}
+
+
+.logo-sec img{ 
+
+    height: 70px;
+    width: 200px;
+    margin-top: 5%;
+    margin-left: 5%;
+    
+}
+
+.navbar{
+    width: 100%;
+    margin-left: 55%;
+   
+}
+
+.banner-text h1{ 
+    margin-top: 5%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    font-size: 7rem;
+
+}
+
+.banner-text h3{
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 3rem;
+    
+}
+
+.banner-text p{
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.wrapper{
+
+    margin: 3% auto;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+
+}
+
+.panel{
+    width: 450px;
+    height: 330px;
+    background-color: #161748;
+    float: left;
+    overflow: hidden;
+    
+}
+
+.panel:hover{
+    transform: scale(1.05);
+
+}
+
+.panel h1 {
+    position: sticky;
+}
+.about-us{
+    
+  
+    margin-top: 25%;
+    
+}
+
+.about-us h3{
+  
+    font-size: 32px;
+    font-family: 'calibri';
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(37, 54, 110);
+    
+}
+
+.about-us b{
+  
+    font-size: 23px;
+    font-family: 'calibri';
+    margin-bottom: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    
+}
+
+
+.about-us-title{
+    margin-left: 40%;
+    font-family: "Lucida Bright";
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    color: rgb(37, 54, 110);
+}
+.about-us-sub-title{
+
+    margin-left: 40%;
+    font-family: "Lucida Bright";
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 2%;
+    color: rgb(48, 50, 59);
+
+}
+
+.about-us-section{
+    
+    margin-left: 15%;
+    display: flex;
+}
+.inner-about-us{
+    background-color: rgb(235, 235, 235);
+    padding: 30px 30px;
+    font-family: 'calibri';
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+    
+      
+}
+
+.inner-about-us h4{
+    margin-top: 4%;
+    font-weight: bolder;
+    color: rgb(37, 54, 110);
+    font-family: 'calibri';
+}
+
+.about-us-img{ 
+    margin-right: 20%;
+}
+.about-us-img img{
+
+    height: 700px;
+    width: 600px;
+
+
+}
+
+
+.objektif-section{
+
+    background-color: #161748;
+    display: flex;
+    
+}
+
+.objektif-title{
+    margin-top: 5%;
+    margin-left: 40%;
+    font-family: "Lucida Bright";
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: rgb(37, 54, 110);
+}
+.objektif-sub-title{
+    margin-left: 40%;
+    font-family: "Lucida Bright";
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 2%;
+    color: rgb(48, 50, 59);
+
+}
+
+.objektif-icons{ 
+    
+    margin-top: 6%;
+    
+}
+
+.objektif-desc b{
+
+    font-size: 30px;
+
+}
+
+.objektif-desc{
+    width: 50%;
+    padding: 70px 50px;
+    font-family: 'calibri';
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(238, 238, 238);
+    letter-spacing: 1px;
+
+}
+
+.objektif-img img{
+    margin-right: 3%;
+    width: 970px;
+    height: 600px;
+}
+
+.links{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    text-align: center;
+    padding: 10px 120px;
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+.links-title{
+
+    margin-top: 3%;
+    margin-left: 45%;
+    font-family: "Lucida Bright";
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: rgb(37, 54, 110);
+
+}
+
+.links-sub-title{
+
+    margin-left: 45%;
+    font-family: "Lucida Bright";
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 2%;
+    color: rgb(48, 50, 59);
+
+}
+
+.links a{
+    color: #161748;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: #484aaf;
+}
+
+.footer-section{
+    background-color: #161748;
+    padding: 7px ;
+    
+}
+
+.ministry-logo {
+    color: aliceblue;
+    margin-right: 20%;
+    
+    
+}
+.ministry-logo img{
+
+    
+    padding-left: 20px;
+    width: 170px;
+    height: 70px;
+    
+}
+
+.inner-footer{
+    width: 100%;
+    height: 43%;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.contact-us{
+    font-family: 'calibri';
+    font-weight: bold;
+    padding-top: 1%;
+    color: aliceblue;
+    margin-left: 3%;
+    padding-bottom: 1%;
+}
+
+.copyright {
+    width: 100%;
+    margin-bottom: 100;
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    color: aliceblue;
+    font-family: 'calibri';
+
+    
+}
+
+
+  
