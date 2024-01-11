@@ -1,8 +1,8 @@
-
-body{
-    background-image: url(Images/Banner/image-from-rawpixel-id-2768303-original.png);
-    background-position: center;
+*{
+    margin: 0;
+    padding: 0;
 }
+
 
 .background{
     height: 80vh;
@@ -65,7 +65,6 @@ body{
 
 
 .banner-text{
-    width: 100%;
    margin: 5%;
 }
 
@@ -184,7 +183,6 @@ body{
 
 .about-us-img img{
     margin-top: 2%;
-    margin-left: 8%;
     width: 160vh;
 
 
