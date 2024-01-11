@@ -24,8 +24,14 @@
     height: auto;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
+}
+.toggle-btn{
+    margin-top: 2%;
+    margin-right: 2%;
+    color: white;
+    display: none;
 }
 
 .navbar a {
@@ -40,18 +46,20 @@
 
 .navbar .header-links{
     margin-top: 2%;
-    display: flex;
+    display: flex;margin-right: 20%;
     gap: 30px;
 }
 
 .navbar{
-    width: 100%;
 
+    width: 100%;
    
 }
 
 .navbar a:hover {
+
     color: #161748;
+
 }
 
 
@@ -92,28 +100,42 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-top:5%
+    margin-top:6%
 
 
 }
 
 .panel { 
     justify-content: center;
-    width: 500px;
+    width: 300px;
     height: 300px;
-    margin: 3px;
+    margin: 10px;
     border-radius: 10px;
     position: relative;
+    padding: 2%;
+    background-color: #484aaf;
+    box-shadow: 8px 8px 20px #3d3d3dc9;
+    border-radius: 10px;
     
 }
+.panel .bi{
+    margin-left: 35%;
+    width: 70px;
+    height: 70px;
+    color: white;
+    margin-top: 5%;
 
+}
+.panel:hover{
+
+}
 .panel h1 {
-    margin-top: 35%;
+    margin-top: 20%;
     text-shadow: 7px 4px 9px #3d3d3dc9;
-    text-align: left;
-    font-size: 30px;
-    padding: 30px;
+    text-align: center;
+    font-size: 23px;
     color: rgba(255, 255, 255, 0.925);
+    font-weight: 700;
 
 }
 
@@ -124,14 +146,14 @@
 
 .about-us{
     
-    margin-top:25%;
+    margin-top:10%;
 
     
 }
 
 .about-us h1{
   
-    color: rgb(37, 54, 110);
+    color: #484aaf;
     font-size: 70px;
     text-align: center;
     
@@ -176,7 +198,7 @@
     
     text-align: center;
     font-size: 70px;
-    color: rgb(37, 54, 110);
+    color: #484aaf;
 
 }
 
@@ -233,7 +255,7 @@
 }
 
 .objektif-desc h1{
-    color: rgb(37, 54, 110);
+    color: #484aaf;
     font-size: 70px;
     text-align: center;
 
@@ -317,7 +339,7 @@
     margin-top: 5%;
     text-align: center;
     font-size: 70px;
-    color: rgb(37, 54, 110);
+    color: #484aaf;
 
 }
 
@@ -356,14 +378,17 @@ h3::after{
 }
 
 .footer-section{
-    background-color: #161748;
-    padding: 7px ;
+    background-color: #484aaf;
+    padding: 0 ;
     
 }
 
 .ministry-logo {
+
     color: aliceblue;
-    margin-right: 20%;
+    padding: 10px;
+    margin: 15px;
+    margin-right: 5%;
     
     
 }
@@ -371,7 +396,7 @@ h3::after{
 
     
     padding-left: 20px;
-    width: 170px;
+    width: 190px;
     height: 70px;
     
 }
@@ -398,7 +423,8 @@ h3::after{
 .copyright {
    
    
-    background-color: rgb(22, 22, 22);
+    background-color: rgba(22, 22, 22, 0.541);
+    width: 100%;
     text-align: center;
     color: aliceblue;
     font-family: 'calibri';
@@ -406,7 +432,35 @@ h3::after{
     
 }
 
-@media (max-width <= 600px) {
+/*mobile-menu */
+.mobile-menu{
+    display: none;
+    position:absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.mobile-menu.open{
+    height: 240px;
+} 
+
+.mobile-menu li{
+    padding: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (width <=600px) {
 
     *{
        margin: 0;
@@ -415,7 +469,7 @@ h3::after{
 
 .background{
  width: auto;
- height: 64vh;
+ height: 42vh;
 }
 
 .logo-sec img{
@@ -426,17 +480,25 @@ h3::after{
 
 }
 
+.toggle-btn{
+    display: block;
+}
+.mobile-menu{
+    display: block;
+    
+}
+
 
 .navbar .header-links{
     
-    display: block;
+    display: none;
     
 }
 
 
 .banner-text h1{
 text-transform: uppercase;
-   font-size: 20px;
+   font-size: 30px;
    text-align: center;
 }
 
@@ -448,7 +510,7 @@ text-transform: uppercase;
 
 .banner-text p{
     text-transform: uppercase;
-   font-size: 5px;
+   font-size: 10px;
    text-align: center;
 }
 
@@ -457,6 +519,7 @@ text-transform: uppercase;
    margin-left: 10%;
    display: flex;
    flex-wrap: wrap;
+   margin-top: 15%;
   
 
     
@@ -465,14 +528,20 @@ text-transform: uppercase;
 .panel{
     padding: 2%;
     margin: 2px;
-    width: 120px;
-    height: 120px;
-    border-radius: 0px;
+    width: 92px;
+    height: 92px;
+    border-radius: 5px;
 
 }
 
+.panel .bi{
+    margin-left: 38%;
+    width: 20px;
+    height: 20px;
+}
+
 .panel h1{
-    margin-top: 40%;
+    margin-top: 10%;
     font-size: 8px;
     padding: 0;
     text-align: center;
@@ -489,6 +558,7 @@ text-transform: uppercase;
     display: none;
 }
 .links-title h1{
+    margin-top: 33.2% ;
     text-align: center;
     font-size: 20px ;
     
@@ -498,26 +568,32 @@ text-transform: uppercase;
     
     text-align: center;
     font-size: 10px ;
+    font-weight: lighter;
     
 }
-.bi{
-    width: 20px;
-    height:20px;
-}
+
 .link p{
     padding: 0;
-    
+    margin: 0;
     font-size: 5px;
 }
 .links{
-    justify-content: center;
     
+    justify-content: center;
     padding: 10px;
     
 }
 
-h3{
-    display: none;
+h3::after{
+    display: block;
+    content:"\A";
+    width:21px;
+    height:3px;
+    background: #484aaf;
+    margin-left: 48%;
+    margin-top:1px;
+    margin-bottom: 1px;
+
 }
 
 .footer-section{
@@ -529,12 +605,12 @@ h3{
 }
 
 .ministry-logo{
-   display:none;
+   margin: 0;
 }
 .ministry-logo img{
-
-    width: 70px;
-    height: 20px;
+    margin-top: 1%;
+    width: 100px;
+    height: 30px;
     
 }
 
@@ -550,7 +626,7 @@ h3{
 }
    
   }
- @media (width >= 300px){
+ @media screen and (width < 375px){
     *{
         margin: 0;
         padding: 0;
@@ -559,6 +635,11 @@ h3{
  .background{
   width: auto;
   height: 55vh;
+ }
+
+ .navbar-container .mobile-menu{
+    left:2rem;
+    width: unset;
  }
  
  .logo-sec img{
@@ -572,7 +653,7 @@ h3{
  
  .navbar .header-links{
      
-     display: block;
+     display: none;
      
  }
  
@@ -669,7 +750,7 @@ h3{
  }
  
  .ministry-logo{
-    display:none;
+    width: auto;
  }
  .ministry-logo img{
  
