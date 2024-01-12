@@ -527,14 +527,14 @@ text-transform: uppercase;
 .panel{
     padding: 1%;
     margin: 2px;
-    width: 200px;
-    height: 200px;
+    width: 178px;
+    height: 178px;
     border-radius: 5px;
 
 }
 
 .panel5{
-    width: 402px;
+    width: 360px;
     height: 200px;
 }
 
