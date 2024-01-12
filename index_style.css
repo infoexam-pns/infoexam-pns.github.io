@@ -517,11 +517,9 @@ text-transform: uppercase;
 }
 
 .wrapper{
-   min-width: 80%;
+   min-width: 100%;
    display: flex;
-   flex-wrap: wrap;
-
-  
+   flex-direction: row;
 
     
 }
@@ -529,21 +527,33 @@ text-transform: uppercase;
 .panel{
     padding: 1%;
     margin: 2px;
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
     border-radius: 5px;
 
 }
 
+.panel5{
+    width: 402px;
+    height: 200px;
+}
+
+.panel5 .bi{
+    margin-top: 30px;
+    margin-left:170px ;
+    width: 50px;
+    height: 50px;
+}
+
 .panel .bi{
-    width: 15px;
-    height: 15px;
+    width: 50px;
+    height: 50px;
 }
 
 .panel h1{
 
-    font-size: 6px;
-    padding: 0;
+    font-size: 15px;
+    padding: 2px;
     text-align: center;
    
 
@@ -559,7 +569,7 @@ text-transform: uppercase;
 }
 
 .links-title h1{
-    margin-top: 80.7%;
+
     text-align: center;
     font-size: 20px ;
     padding: 0;
@@ -568,7 +578,6 @@ text-transform: uppercase;
 }
 
 .links-title{
-    margin-top: 50%;
     width: 100%;
 
 }
@@ -582,7 +591,7 @@ text-transform: uppercase;
 .links-title p{
     
     text-align: center;
-    font-size: 5px ;
+    font-size: 10px ;
     font-weight: lighter;
     width: 100%;
     padding: 0;
