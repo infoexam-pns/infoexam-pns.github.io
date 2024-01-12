@@ -32,7 +32,7 @@
             <ul class="header-links">
               <li><a href="#banner-text">UTAMA</a></li>
               <li><a href="#about-us-title">INFO UPEP</a></li>
-              <li><a href="#pautan">PAUTAN </i></a></li>
+              <li><a href="#pautan">PAUTAN</a></li>
               <li><a href="#footer">HUBUNGI KAMI</a></li>
             </ul>
           </nav>
@@ -48,15 +48,17 @@
         </div>
       </header>
       <script>
-        const toggleBtn = document.querySelector('.toggle-btn')
-        const toggleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropDownMenu = document.querySelector('.mobile-menu')
+        const toggleBtn = document.querySelector(".toggle-btn");
+        const toggleBtnIcon = document.querySelector(".toggle-btn i");
+        const dropDownMenu = document.querySelector(".mobile-menu");
 
         toggleBtn.onClick = function () {
           dropDownMenu.classList.toggle("open");
-          const isOpen = dropDownMenu.classList.contain("open")
+          const isOpen = dropDownMenu.classList.contain("open");
 
-          toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+          toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
         };
       </script>
 
@@ -621,7 +623,9 @@
             <img src="Images/Logo/logo POLYCC -Mac 2022-01.png" alt="logo1" />
           </div>
         </div>
-        <div class="copyright"><p>Hak Cipta Unit Peperiksaan Politeknik Nilai</p></div>
+        <div class="copyright">
+          <h6>Hak Cipta Unit Peperiksaan Politeknik Nilai</h6>
+        </div>
       </footer>
     </div>
   </body>
