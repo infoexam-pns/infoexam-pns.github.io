@@ -422,19 +422,18 @@ h3::after{
 
 .copyright {
    
-   
+    margin-top: 10%;   
     background-color: rgba(22, 22, 22, 0.541);
     width: 100%;
     text-align: center;
     color: aliceblue;
     font-family: 'calibri';
-
-    
+       
 }
 
 /*mobile-menu */
 .mobile-menu{
-    display: none;
+    
     position:absolute;
     right: 2rem;
     top: 60px;
@@ -460,7 +459,7 @@ h3::after{
 
 
 
-@media screen and (width <=600px) {
+@media (max-width:480px) and (max-width:767px) {
 
     *{
        margin: 0;
@@ -469,7 +468,7 @@ h3::after{
 
 .background{
  width: auto;
- height: 42vh;
+ height: 40vh;
 }
 
 .logo-sec img{
@@ -498,13 +497,13 @@ h3::after{
 
 .banner-text h1{
 text-transform: uppercase;
-   font-size: 30px;
+   font-size: 20px;
    text-align: center;
 }
 
 .banner-text h2{
     text-transform: uppercase;
-   font-size: 10px;
+   font-size: 30px;
    text-align: center;
 }
 
@@ -515,8 +514,7 @@ text-transform: uppercase;
 }
 
 .wrapper{
-   width: 80%;
-   margin-left: 10%;
+   min-width: 90%;
    display: flex;
    flex-wrap: wrap;
    margin-top: 15%;
@@ -528,8 +526,8 @@ text-transform: uppercase;
 .panel{
     padding: 2%;
     margin: 2px;
-    width: 92px;
-    height: 92px;
+    width: 90px;
+    height: 90px;
     border-radius: 5px;
 
 }
@@ -688,7 +686,7 @@ h3::after{
 
      padding: 1%;
      margin: 2px;
-     width: 65px;
+     min-width: 65px;
      height: 65px;
      border-radius: 0px;
      margin-top: 20px;
